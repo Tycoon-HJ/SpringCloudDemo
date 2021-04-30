@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ahai.dao.DepDao">
+
+    <insert id="addDept" parameterType="com.ahai.pojo.Dept">
+        insert into dept (dname, db_source)
+        VALUES (#{dname}, DATABASE());
+    </insert>
+
+    <select id="queryById" resultType="com.ahai.pojo.Dept">
+        select *
+        from dept
+        where id = #{id};
+    </select>
+</mapper>

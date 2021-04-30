@@ -1,0 +1,5 @@
+# 项目排除路径
+/springclodu-consumer-dept-80/target/
+/SpringCloud-api/target/
+/springcloud-eureka-7001/target/
+/springcloud-provid-dept-8001/target/

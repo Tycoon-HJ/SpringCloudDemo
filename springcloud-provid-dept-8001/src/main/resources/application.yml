@@ -18,3 +18,14 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+info:
+  app.name: springcloud-demo
+  company.name: www.ahai.com
+  build.version: 1.0
+  build.artifactId: artifactidByshenming
+

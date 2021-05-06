@@ -18,6 +18,7 @@ public class DetConsumerController {
     @Resource
     private RestTemplate restTemplate;
 
+
     @RequestMapping("/consumer/dept/{id}")
     public Dept get(@PathVariable("id") int id){
        return restTemplate.getForObject(REST_URL_PREFIX+"/dept/"+id,Dept.class);
